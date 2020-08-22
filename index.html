@@ -19,6 +19,8 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
 
+    <link href="css/welcome_message.css" rel="stylesheet" type="text/css" />
+    <link href="css/slickmodal.min.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -68,8 +70,8 @@
       </div>
       <div class="sub-main">
           <ul>
-              <li class="d-inline"><a href="javascript:void(0)" class="login iq-button iq-btn-outline iq-btn-round" target="_blank">Certifications</a></li>
-              <li class="d-inline"><a href="https://forms.gle/79foo84PNWS6jMwq7" class="signup iq-button default iq-btn-round" target="_blank">Ask a Question</a></li>
+              <li class="d-inline"><a href="javascript:void(0)" class="login iq-button iq-btn-outline iq-btn-round">Certifications</a></li>
+              <li class="d-inline"><a href="javascript:void(0)" class="signup iq-button default iq-btn-round open-sm">Ask a Question</a></li>
           </ul>
       </div>
   </nav>
@@ -968,6 +970,49 @@
                           $("#slider-4-slide-4-layer-3").click(function(){
                             window.location.assign("#plans-and-pricing");
                           });
+                        });
+                    </script>
+
+                    <script src="js/jquery.slickmodal.min.js"></script>
+
+                    <div class="welcomeMsg" data-sm-init="true">
+
+                        <iframe src="contact-us.html" width="540" height="680" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+                    </div>
+
+                    <script>
+                        $('.welcomeMsg').SlickModals({
+                            popup_type: 'none',
+                            popup_delayedTime: '1s',
+                            popup_animation: 'slideTop',
+                            popup_closeButtonPlace: 'inside',
+                            popup_css: {
+                                'width': '540px',
+                                'background': '#f0f0f0',
+                                'padding': '50px',
+                                'margin': 'auto',
+                                'border-radius': '10px'
+                            },
+                            overlay_css: {
+                                'background': 'rgba(0, 0, 0, 0.8)'
+                            },
+                            content_animate: true,
+                            content_animation: 'slideBottom',
+                            content_css        : {
+                                'animation-duration': '0.8s',
+                                'animation-delay'   : '0.6s',
+                                'text-align': 'center',
+                                'color': '#555'
+                            },
+                            mobile_breakpoint: '520px',
+                            mobile_position: 'bottomCenter',
+                            mobile_css: {
+                                'width': '100%',
+                                'height': 'auto',
+                                'padding': '50px',
+                                'margin': '0'
+                            }
                         });
                     </script>
 </body>
