@@ -404,35 +404,9 @@
 <div class="iq-price-footer">
 <div class="iq-btn-container">
 
-  <div id="paypal-button-container-1"></div>
-<script src="https://www.paypal.com/sdk/js?client-id=ASa09QnOK33826hTS1ThkWYddNhOL48SglcqOFYiAZUrFHMtLqDV6LscJE4dUAXQvVat4K8Uojknmjjl&currency=USD" data-sdk-integration-source="button-factory"></script>
-<script>
-  paypal.Buttons({
-      style: {
-          shape: 'rect',
-          color: 'blue',
-          layout: 'vertical',
-          label: 'buynow',
+      <a class="iq-button iq-btn-round d-inline smoothBanner-sm-01" href="javascript:void(0)">Pay Now</a>
 
-      },
-      createOrder: function(data, actions) {
-          return actions.order.create({
-              purchase_units: [{
-                  amount: {
-                      value: '2400'
-                  }
-              }]
-          });
-      },
-      onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-              alert('Transaction completed by ' + details.payer.name.given_name + '!');
-          });
-      }
-  }).render('#paypal-button-container-1');
-</script>
-
-      <!-- <a class="iq-button iq-btn-round d-inline" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UUKLVRQDUW8L2">Pay Now</a> -->
+      <!--  <a class="iq-button iq-btn-round d-inline" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UUKLVRQDUW8L2">Pay Now</a> -->
 </div>
 </div>
 </div>
@@ -475,33 +449,7 @@
 <div class="iq-price-footer">
 <div class="iq-btn-container">
 
-  <div id="paypal-button-container-2"></div>
-
-  <script>
-    paypal.Buttons({
-        style: {
-            shape: 'rect',
-            color: 'blue',
-            layout: 'vertical',
-            label: 'buynow',
-
-        },
-        createOrder: function(data, actions) {
-            return actions.order.create({
-                purchase_units: [{
-                    amount: {
-                        value: '6000'
-                    }
-                }]
-            });
-        },
-        onApprove: function(data, actions) {
-            return actions.order.capture().then(function(details) {
-                alert('Transaction completed by ' + details.payer.name.given_name + '!');
-            });
-        }
-    }).render('#paypal-button-container-2');
-  </script>
+  <a class="iq-button iq-btn-round d-inline smoothBanner-sm-02" href="javascript:void(0)">Pay Now</a>
 
     <!--  <a class="iq-button iq-btn-round d-inline" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MKLW77GYVKNRN">Pay Now</a> -->
 </div>
@@ -546,33 +494,7 @@
 <div class="iq-price-footer">
 <div class="iq-btn-container">
 
-  <div id="paypal-button-container-3"></div>
-
-  <script>
-    paypal.Buttons({
-        style: {
-            shape: 'rect',
-            color: 'blue',
-            layout: 'vertical',
-            label: 'buynow',
-
-        },
-        createOrder: function(data, actions) {
-            return actions.order.create({
-                purchase_units: [{
-                    amount: {
-                        value: '9900'
-                    }
-                }]
-            });
-        },
-        onApprove: function(data, actions) {
-            return actions.order.capture().then(function(details) {
-                alert('Transaction completed by ' + details.payer.name.given_name + '!');
-            });
-        }
-    }).render('#paypal-button-container-3');
-  </script>
+  <a class="iq-button iq-btn-round d-inline smoothBanner-sm-03" href="javascript:void(0)">Pay Now</a>
 
     <!--  <a class="iq-button iq-btn-round d-inline" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LS9LGN7X8Q75J">Pay Now</a> -->
 </div>
@@ -1094,6 +1016,108 @@
                                 'height': 'auto',
                                 'padding': '50px',
                                 'margin': '0'
+                            }
+                        });
+                    </script>
+
+                    <div class="smoothBanner-01" data-sm-init="true">
+
+                        <iframe src="standard-security-order.html" width="1040" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+                    </div>
+
+                    <script>
+                        $('.smoothBanner-01').SlickModals({
+                            popup_type: 'none',
+                            popup_delayedTime: '1s',
+                            popup_animation: 'zoomOut',
+                            popup_reopenClass: 'smoothBanner-sm-01',
+                            popup_css: {
+                                'width': '1040px',
+                                'background': '#fff',
+                                'padding': '0',
+                                'margin': 'auto',
+                                'animation-duration': '1s'
+                            },
+                            overlay_css: {
+                                'background': 'rgba(0, 0, 0, 0.6)'
+                            },
+                            mobile_breakpoint: '540px',
+                            mobile_position: 'center',
+                            mobile_css: {
+                                'width': '100%',
+                                'background': '#fff',
+                                'padding': '0',
+                                'margin': 'auto',
+                                'animation-duration': '1s'
+                            }
+                        });
+                    </script>
+
+                    <div class="smoothBanner-02" data-sm-init="true">
+
+                        <iframe src="premium-security-order.html" width="1040" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+                    </div>
+
+                    <script>
+                        $('.smoothBanner-02').SlickModals({
+                            popup_type: 'none',
+                            popup_delayedTime: '1s',
+                            popup_animation: 'zoomOut',
+                            popup_reopenClass: 'smoothBanner-sm-02',
+                            popup_css: {
+                                'width': '1040px',
+                                'background': '#fff',
+                                'padding': '0',
+                                'margin': 'auto',
+                                'animation-duration': '1s'
+                            },
+                            overlay_css: {
+                                'background': 'rgba(0, 0, 0, 0.6)'
+                            },
+                            mobile_breakpoint: '540px',
+                            mobile_position: 'center',
+                            mobile_css: {
+                                'width': '100%',
+                                'background': '#fff',
+                                'padding': '0',
+                                'margin': 'auto',
+                                'animation-duration': '1s'
+                            }
+                        });
+                    </script>
+
+                    <div class="smoothBanner-03" data-sm-init="true">
+
+                        <iframe src="enterprise-security-order.html" width="1040" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+                    </div>
+
+                    <script>
+                        $('.smoothBanner-03').SlickModals({
+                            popup_type: 'none',
+                            popup_delayedTime: '1s',
+                            popup_animation: 'zoomOut',
+                            popup_reopenClass: 'smoothBanner-sm-03',
+                            popup_css: {
+                                'width': '1040px',
+                                'background': '#fff',
+                                'padding': '0',
+                                'margin': 'auto',
+                                'animation-duration': '1s'
+                            },
+                            overlay_css: {
+                                'background': 'rgba(0, 0, 0, 0.6)'
+                            },
+                            mobile_breakpoint: '540px',
+                            mobile_position: 'center',
+                            mobile_css: {
+                                'width': '100%',
+                                'background': '#fff',
+                                'padding': '0',
+                                'margin': 'auto',
+                                'animation-duration': '1s'
                             }
                         });
                     </script>
