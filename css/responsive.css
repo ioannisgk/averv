@@ -28,12 +28,19 @@ img.shape-right {
 	header .navbar ul li a { font-size: 14px }
 	header .navbar ul li .sub-menu li a { padding: 10px 15px; }
 }
+@media(max-width:1280px) {
+.iq-getstarted a.iq-button.iq-btn-outline {
+    padding: 10px 15px;}
+}
 @media(max-width:1199px) {
 	.widget.widget_nav_menu ul li .sub-menu, .widget ul.menu li .sub-menu { padding-left: 10px }
 	table td, table th { padding: 5px; text-align: center }
 	.comment-respond .comment-form-author, .comment-respond .comment-form-email, .comment-respond .comment-form-url { width: 31.6%; }
 	.iq-tabs .nav-pills .nav-link { padding-left: 0; padding-right: 0; }
-img.shape-right, img.shape-left  { display: none; }
+    img.shape-right, img.shape-left  { display: none; }
+
+    .iq-hosting-txt {padding-left: 15px;padding-right: 15px;}
+    .iq-data-product img.shape {display: none;}
 }
 @media(max-width:1024px) {
 
@@ -52,6 +59,8 @@ img.shape-right, img.shape-left  { display: none; }
 	.iq-tooltip-style-2 .tooltip-down.tooltip-down-3 { left: 0 !important; top: 240px !important; right: 0; margin: 0 auto; }
 	.iq-tooltip-style-1 p { font-size: 24px; }
 	.home.blog .content-area .site-main, .content-area .site-main { padding: 70px 0; }
+
+	.iq-hosting-txt {margin-top: -100px;}
 }
 @media(max-width:992px) {
 
@@ -105,8 +114,26 @@ img.shape-right, img.shape-left  { display: none; }
 	.commentlist .comment-respond .comment-form-author, .comment-respond .comment-form-email, .comment-respond .comment-form-url, .comment-respond .comment-form-author, .comment-respond .comment-form-email, .comment-respond .comment-form-url { width: 100%; margin-right: 0 }
 	.comment-form-cookies-consent label { margin-top: -32px }
 	.owl-carousel.blog-carousel { margin: 0; }
-	.iq-application { background-image: none; padding: 0px; }
-	.iq-process { margin-bottom: 30px; }
+	.iq-application { background-image: none; padding: 45px; }
+	.iq-process { margin-bottom: 45px; }
+
+	.iq-price-container{margin-bottom: 30px;}
+    .iq-hosting-list {padding: 30px 15px 30px 15px;}
+    .iq-compute-list {margin: 30px 15px 30px 15px;}
+    .iq-help .col-lg-6.text-right.align-self-center {text-align: left!important; margin-top: 30px;}
+    .iq-tabs.iq-hosting .nav.nav-pills {margin-bottom: 30px;}
+    .iq-getstarted .text-left.iq-title-box.iq-title-default.iq-title-box-1{margin-bottom: 30px;}
+    .iq-compute-list {padding: 15px;}
+    .iq-db-options ul li.type-1 .iq-heading {margin-right: 30px;width: 21%;}
+    .iq-hosting-txt {margin-top: 75px;}
+    .iq-hosting-txt.overview-block-pb {padding: 0px 15px 75px;}
+
+    .iq-popup-video, .iq-popup-video .position-relative {min-height: 200px;}
+    .iq-hosting-list .border-right {border-right: none!important;}
+    .iq-getstarted a.iq-button.iq-btn-outline {padding: 10px 30px;}
+    .iq-compute-list .border-right {
+    border-right: none!important;
+}
 }
 @media(max-width:767px) {
 
@@ -149,6 +176,18 @@ img.shape-right, img.shape-left  { display: none; }
 	footer .footer-topbar .container { padding: 30px; }
 	.elementor-shortcode .mc4wp-form input[type=email] { width: 100%; margin-bottom: 30px; }
 	.iq-breadcrumb .title, .iq-breadcrumb-one .title { font-size: 36px; }
+
+	.iq-hosting-list {padding: 30px 15px 30px 15px;}
+	.iq-compute-list {margin: 30px 15px 30px 15px;}
+	.iq-help .col-lg-6.text-right.align-self-center {text-align: left!important; margin-top: 30px;}
+	.iq-tabs.iq-hosting .nav.nav-pills {margin-bottom: 30px;}
+	.iq-getstarted .text-left.iq-title-box.iq-title-default.iq-title-box-1{margin-bottom: 30px;}
+	.iq-db-options ul li.type-1 .iq-heading {margin-right: 5px; width: 33%;}
+	.iq-db-options ul li.type-1 .iq-heading.iq-image{display: none!important;}
+	.iq-db-options ul li.type-1 .iq-heading.iq-res{display: none!important;}
+
+	.iq-fancy-box-style-1 {margin-bottom: 10px;}
+	.iq-analytics-clients .iq-client-col-4 li{width: 50%;}
 }
 @media(max-width:654px) {
 	.comment-form-cookies-consent label { margin-left: 30px; }
@@ -195,4 +234,17 @@ img.shape-right, img.shape-left  { display: none; }
 	.sub-header { display: none }
 	.iq-breadcrumb .title, .iq-breadcrumb-one .title { font-size: 30px; }
 	.iq-testimonial-1 .iq-testimonial-info .iq-testimonial-content { padding: 30px; }
+
+	.iq-help .iq-btn-container.d-inline-block.mr-4 {display: block!important;margin-bottom: 30px;}
+    .iq-getstarted .iq-btn-container.d-inline-block.mr-4 {display: block!important;margin-bottom: 30px;}
+    .iq-db-options ul li.type-1 {width: 100%;display: block;}
+    .iq-db-options ul li.type-1 .iq-heading {width: 100%;}
+    .iq-db-options ul li.type-1 .iq-heading .heading-title.iq-title {color: #132046;font-weight: bold;}
+    .iq-icon-box-style-5 .icon-box-content {padding: 15px;}
+    .iq-icon-box-style-5 .iq-btn-container a.iq-button{padding: 10px 20px;}
+
+    .iq-list.iq-two-column {
+    columns: 1;
+    -webkit-columns: 1;}
+    .iq-analytics-clients .iq-client-col-4 li{width: 100%;}
 }
